@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/main.js" defer></script>
+</head>
+<body>
+    <div class="container"> <!--onde vou abrigar os elementos principais do conversor-->
+    <h1>Conversor de unidades</h1>
+    <div class="input-group">
+        <label for="input">Digite a quantidade</label> <!--o texto que simboliza a quantidade-->
+        <input type="number" id="input" name="input" placeholder="0"> <!--Simboliza que o numero começara por padrão no 0-->
+    </div>
+    <div class="input-group">
+        <label for="from">De:</label>
+        <select name="from" id="from">
+            <option value="m">Metro(s)</option>
+            <option value="km">Quilômetro(s)</option>
+            <option value="cm">Centímetro(s)</option>
+            <option value="mm">milímetro(s)</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="to">Para:</label>
+        <select name="to" id="to">
+            <option value="m">Metro(s)</option>
+            <option value="km">Quilômetro(s)</option>
+            <option value="cm">Centímetro(s)</option>
+            <option value="mm">milímetro(s)</option>
+        </select>
+    </div>
+    <button id="convert-btn">Converter</button>
+    <div class="output-group">
+        <label for="output">Resultado</label>
+       <input type="output" id="output" readonly> <!--Readonly para não deixar o usuario ditar, apenas copiar-->
+    </div>
+    <div id="message"></div> <!--Mensagem que aparecerá embaixo, com as informações-->
+    </div>
+</body>
+</html>
