@@ -4,60 +4,57 @@
     padding: 0;
     font-family: Arial;
 }
-
 body{
-    background-color: #f4f4f4;
-    display: flex;                /*centralizando os itens todos da pagina*/
+    background-color:moccasin;
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /*altura total da tela e centraliza na vertical tbm*/
+    height: 100vh;
 }
-
 .container{
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color:#c4c4c4;
     padding: 1.5rem;
+    border-radius: 10px;
     width: 400px;
 }
-
-/*Colocando o h1(texto principal) no centro e definindo seu tamanho*/
-h1{
+.container h1{
     font-size: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom:1.5rem;
     text-align: center;
 }
-.input-group,.output-group{ /*Padronização dos inputs e do output*/
+.input-group,
+.output-group{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.2rem;
 }
-.input-group label, .output-group label{
+.input-group label,
+.output-group label{
+    font-weight: 600;
     margin-bottom: 0.4rem;
-    font-weight: bold;/*Detalhe em negrito */
 }
-select,
-input{
-    padding: .8rem;
-    border-radius: 5px; /*Bordas redondas*/
-    border: none; /*Tira as bordas pretas do form*/
-    font-size: 16px;
+select, input{
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
     background-color: #eee;
-
 }
-button{
+ button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #4caf50;
     border-radius: 5px;
     border: none;
-    color: #FFF;
-    cursor: pointer;
     font-size: 1rem;
-    padding: 0.8rem 1.2rem;
-    opacity: .7;
-    transition: .4s;
+    padding: .8rem 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 150px;
 }
 button:hover{
-    opacity: 1;
+    background-color:darkgreen;
 }
 .output-group{
     margin-top: 1.2rem;
@@ -67,5 +64,4 @@ button:hover{
     color: #4caf50;
     margin-top: .7rem;
     text-align: center;
-               
 }
